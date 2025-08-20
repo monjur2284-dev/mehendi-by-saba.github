@@ -1,0 +1,59 @@
+
+/*
+Theme Name: Monjur Yoga
+Theme URI: https://example.local/monjur-yoga
+Author: ChatGPT for Monjur
+Description: Minimal WooCommerce-ready theme for a Yoga store. Hero, Collections, Products grid, Features, Image-with-text, Tabs, Banner, Blog, Testimonials, Contact. Header-to-footer demo.
+Version: 1.0.0
+Text Domain: monjur-yoga
+Tags: woo, ecommerce, yoga, minimal
+*/
+:root{
+  --primary:#0a2540; /* dark blue */
+  --accent:#ff4da6;  /* pink */
+  --bg:#0b1020;
+  --muted:#f3f5f7;
+  --text:#111827;
+}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;margin:0;color:var(--text);background:#fff}
+a{color:var(--primary);text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;padding:12px 18px;border-radius:999px;border:0;background:var(--primary);color:#fff;font-weight:600}
+.btn.accent{background:var(--accent)}
+.btn.ghost{background:#fff;color:var(--primary);border:2px solid var(--primary)}
+header.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{padding:10px 12px;border-radius:10px}
+.nav a:hover{background:#f5f7fb}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--primary)}
+.brand .dot{width:10px;height:10px;border-radius:999px;background:var(--accent)}
+.hero{background:linear-gradient(135deg,#fef5fb, #e9f2ff);padding:70px 0}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center}
+.hero h1{font-size:48px;line-height:1.1;margin:0 0 10px}
+.hero p{font-size:18px;color:#374151}
+.section{padding:60px 0}
+.section h2{font-size:36px;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(16,24,40,.06)}
+.card img{display:block;width:100%;height:220px;object-fit:cover}
+.card .p{padding:16px}
+.badge{display:inline-block;background:var(--primary);color:#fff;padding:6px 10px;border-radius:999px;font-size:12px}
+.banner{background:linear-gradient(90deg, var(--primary), #1f3b5f);color:#fff;padding:36px;border-radius:20px;display:flex;justify-content:space-between;align-items:center}
+.footer{background:#0f172a;color:#cbd5e1;padding:40px 0;margin-top:40px}
+.footer a{color:#cbd5e1}
+.tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tab{padding:8px 12px;border-radius:999px;background:#f3f4f6;border:1px solid #e5e7eb;cursor:pointer}
+.tab.active{background:var(--primary);color:#fff}
+.input, input, textarea, select{width:100%;padding:12px;border:1px solid #e5e7eb;border-radius:12px}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-form textarea{grid-column:1/-1;height:120px}
+.contact-form button{grid-column:1/-1}
+.notice{background:#ecfeff;border:1px solid #a5f3fc;padding:12px;border-radius:12px}
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .grid{grid-template-columns:1fr}
+}
